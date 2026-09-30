@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Esquina Tech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f6fa; --ink:#0d1b2a; --muted:#4a5b70; --card:#ffffff; --line:#d5dde8; --accent:#0a5cff; --volt:#c8ff3d;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0b1320; --ink:#eef3fa; --muted:#9fb0c6; --card:#132036; --line:#243652; --accent:#6b9bff;}
+}
+:root[data-theme="dark"]{--bg:#0b1320; --ink:#eef3fa; --muted:#9fb0c6; --card:#132036; --line:#243652; --accent:#6b9bff;}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.5;min-height:100vh}
+main{max-width:460px;margin:0 auto;padding:40px 20px 48px}
+.mark{display:inline-flex;align-items:center;gap:10px;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:15px}
+.dot{width:14px;height:14px;background:var(--volt);border:2px solid var(--ink);border-radius:3px 3px 3px 12px}
+h1{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:clamp(40px,12vw,56px);line-height:1;letter-spacing:-.02em;margin:28px 0 16px}
+.tag{font-size:18px;color:var(--ink);margin:0 0 8px;max-width:34ch}
+.sub{color:var(--muted);margin:0 0 32px;max-width:40ch}
+.services{list-style:none;padding:0;margin:0 0 32px;display:flex;flex-wrap:wrap;gap:8px}
+.services li{border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;background:var(--card)}
+.links{display:grid;gap:12px}
+a.btn{display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:var(--ink);background:var(--card);border:1.5px solid var(--ink);border-radius:14px;padding:16px 18px;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:18px;box-shadow:4px 4px 0 var(--ink)}
+a.btn small{display:block;font-family:Inter,system-ui,sans-serif;font-size:13px;color:var(--muted);font-weight:400}
+a.btn.wa{background:var(--volt);color:#0d1b2a;border-color:#0d1b2a;box-shadow:4px 4px 0 #0d1b2a}
+a.btn.wa small{color:#28401a}
+a.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+a.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+footer{margin-top:36px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <div class="mark"><span class="dot"></span>Concepción, Chile</div>
+  <h1>La Esquina Tech</h1>
+  <p class="tag">Tecnología e innovación electrónica, con servicio técnico y asesoría para ti.</p>
+  <p class="sub">Compra lo que necesitas, repara tu celular y pregunta antes de decidir.</p>
+  <ul class="services">
+    <li>Tienda de tecnología</li>
+    <li>Servicio técnico de celulares</li>
+    <li>Asesoría</li>
+  </ul>
+  <nav class="links" aria-label="Contacto y redes">
+    <a class="btn wa" href="https://wa.me/56973537765" target="_blank" rel="noopener"><span>Escríbenos por WhatsApp<small>+56 9 7353 7765</small></span></a>
+    <a class="btn" href="https://www.instagram.com/laesquinatech.conce" target="_blank" rel="noopener"><span>Instagram<small>@laesquinatech.conce</small></span></a>
+    <a class="btn" href="https://www.tiktok.com/@laesquinatech.conce" target="_blank" rel="noopener"><span>TikTok<small>@laesquinatech.conce</small></span></a>
+  </nav>
+  <footer>La Esquina Tech</footer>
+</main>
+</body>
+</html>
